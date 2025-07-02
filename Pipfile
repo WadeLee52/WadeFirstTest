@@ -12,6 +12,7 @@ requests = "*"
 sqlalchemy = "*"
 loguru = "*"
 apscheduler = "*"
+pymysql = "*"
 
 [dev-packages]
 
