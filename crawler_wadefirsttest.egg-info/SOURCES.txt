@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+crawler_wadefirsttest/__init__.py
+crawler_wadefirsttest.egg-info/PKG-INFO
+crawler_wadefirsttest.egg-info/SOURCES.txt
+crawler_wadefirsttest.egg-info/dependency_links.txt
+crawler_wadefirsttest.egg-info/top_level.txt
