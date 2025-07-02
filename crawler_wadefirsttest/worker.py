@@ -1,6 +1,6 @@
 from celery import Celery
 
-from crawler.config import (
+from crawler_wadefirsttest.config import (
     RABBITMQ_HOST,
     RABBITMQ_PORT,
     WORKER_ACCOUNT,
