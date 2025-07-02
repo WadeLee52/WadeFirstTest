@@ -9,14 +9,14 @@ RUN apt-get update && \
 # 安裝特定版本的 pipenv（用於 Python 虛擬環境和依賴管理）
 RUN pip install pipenv==2022.4.8
 
-# 建立工作目錄 /crawler_firstimage
-RUN mkdir /crawler_firstimage
+# 建立工作目錄 /crawler_wadefirsttest
+RUN mkdir /crawler_wadefirsttest
 
-# 將當前目錄（與 Dockerfile 同層）所有內容複製到容器的 /crawler_firstimage 資料夾
-COPY . /crawler_firstimage/
+# 將當前目錄（與 Dockerfile 同層）所有內容複製到容器的 /crawler_wadefirsttest 資料夾
+COPY . /crawler_wadefirsttest/
 
-# 設定容器的工作目錄為 /crawler_firstimage，後續的指令都在這個目錄下執行
-WORKDIR /crawler_firstimage/
+# 設定容器的工作目錄為 /crawler_wadefirsttest，後續的指令都在這個目錄下執行
+WORKDIR /crawler_wadefirsttest/
 
 # 根據 Pipfile.lock 安裝所有依賴（確保環境一致性）
 RUN pipenv sync
