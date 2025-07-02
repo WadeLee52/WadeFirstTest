@@ -1,4 +1,4 @@
-from crawler.tasks_crawler_finmind_duplicate import crawler_finmind_duplicate
+from crawler_wadefirsttest.tasks_crawler_finmind_duplicate import crawler_finmind_duplicate
 
 # 發送到 twse 的 queue
 task_2330 = crawler_finmind_duplicate.s(stock_id="2330")

@@ -7,7 +7,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from loguru import logger
 
 # 匯入 Celery 任務（假設你用的是非同步任務）
-from crawler.tasks_crawler_finmind import crawler_finmind
+from crawler_wadefirsttest.tasks_crawler_finmind import crawler_finmind
 
 
 # 測試用排程任務：印出 hello world（每 5 秒執行一次）
