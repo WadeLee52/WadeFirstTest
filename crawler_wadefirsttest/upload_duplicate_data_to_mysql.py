@@ -14,7 +14,7 @@ from sqlalchemy.dialects.mysql import (
     insert,
 )  # 專用於 MySQL 的 insert 語法，可支援 on_duplicate_key_update
 
-from crawler.config import MYSQL_ACCOUNT, MYSQL_HOST, MYSQL_PASSWORD, MYSQL_PORT
+from crawler_wadefirsttest.config import MYSQL_ACCOUNT, MYSQL_HOST, MYSQL_PASSWORD, MYSQL_PORT
 
 # 建立連接到 MySQL 的資料庫引擎（記得把帳號密碼換成你自己的）
 engine = create_engine(

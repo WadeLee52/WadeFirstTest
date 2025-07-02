@@ -2,8 +2,8 @@ import pandas as pd
 import requests
 from sqlalchemy import create_engine  # 建立資料庫連線的工具（SQLAlchemy）
 
-from crawler.config import MYSQL_ACCOUNT, MYSQL_HOST, MYSQL_PASSWORD, MYSQL_PORT
-from crawler.worker import app
+from crawler_wadefirsttest.config import MYSQL_ACCOUNT, MYSQL_HOST, MYSQL_PASSWORD, MYSQL_PORT
+from crawler_wadefirsttest.worker import app
 
 
 def upload_data_to_mysql(df: pd.DataFrame):
