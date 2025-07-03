@@ -1,4 +1,4 @@
-from crawler.config import (
+from crawler_wadefirsttest.config import (
     WORKER_ACCOUNT,
     WORKER_PASSWORD,
     RABBITMQ_HOST,
