@@ -13,13 +13,13 @@ RUN pip install pipenv==2022.4.8
 RUN mkdir /crawler_wadefirsttest
 
 # 將當前目錄（與 Dockerfile 同層）所有內容複製到容器的 /crawler_wadefirsttest 資料夾
-COPY ./crawler_wadefirsttest /crawler_wadelayertest/crawler_wadefirsttest
-COPY ./setup.py /crawler_wadelayertest
-COPY ./genenv.py /crawler_wadelayertest
-COPY ./Pipfile /crawler_wadelayertest
-COPY ./Pipfile.lock /crawler_wadelayertest
-COPY ./README.md /crawler_wadelayertest
-COPY ./local.ini /crawler_wadelayertest
+COPY ./crawler_wadefirsttest /crawler_wadefirsttest/crawler_wadefirsttest
+COPY ./setup.py /crawler_wadefirsttest
+COPY ./genenv.py /crawler_wadefirsttest
+COPY ./Pipfile /crawler_wadefirsttest
+COPY ./Pipfile.lock /crawler_wadefirsttest
+COPY ./README.md /crawler_wadefirsttest
+COPY ./local.ini /crawler_wadefirsttest
 
 # 設定容器的工作目錄為 /crawler_wadefirsttest，後續的指令都在這個目錄下執行
 WORKDIR /crawler_wadefirsttest/
